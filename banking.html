@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank BD</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-6xl text-center mt-10 mb-14">Let's pay attention to<span class="font-semibold text-yellow-500"> Account Health</span></h1>
+    </header>
+    <main>
+        <section class="w-3/5 mx-auto">
+            <div class="grid grid-cols-3 gap-4 text-center mb-8">
+                <div class="bg-yellow-300 py-10 rounded-lg">
+                    <h3 class="font-bold text-2xl pb-2">Deposit</h3>
+                    <h4 class="text-5xl overflow-hidden">$<span id="total-deposit">00</span>
+                    </h4>
+                </div>
+                <div class="bg-green-300 py-10 rounded-lg">
+                    <h3 class="font-bold text-2xl pb-2">Withdraw</h3>
+                    <h4 class="text-5xl overflow-hidden">$<span id="total-withdraw">00</span></h4>
+                </div>
+                <div class="bg-blue-300 py-10 rounded-lg">
+                    <h3 class="font-bold text-2xl pb-2">Balance</h3>
+                    <h4 class="text-5xl overflow-hidden">$<span id="total-balance">00</span>
+                    </h4>
+                </div>
+            </div>
+            <div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-pink-200 text-center py-5 rounded-lg">
+                        <h3 class="font-semibold text-xl pb-5">Please Deposit</h3>
+                        <input id="depositInput" class="block mx-auto rounded mb-2 py-1 pl-3" type="text" placeholder="$ Amount">
+                        <button id="depositButton" class="bg-yellow-500 py-2 px-7 rounded font-semibold">Deposit</button>
+                    </div>
+                    <div class="bg-red-200 text-center py-5 rounded-lg">
+                        <h3 class="font-semibold text-xl pb-5">Please Withdraw</h3>
+                        <input id="withdraw-input" class="block mx-auto rounded mb-2 py-1 pl-3" type="text" placeholder="$ Amount">
+                        <button id="withdraw-button" class="bg-yellow-500 py-2 px-7 rounded font-semibold">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+</html>
